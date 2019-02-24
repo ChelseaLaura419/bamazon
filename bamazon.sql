@@ -7,7 +7,7 @@ CREATE TABLE products(
   id INT NOT NULL AUTO_INCREMENT,
   product_name VARCHAR(100) NOT NULL,
   department_name VARCHAR(45) NOT NULL,
-  price INT default 0,
+  price DECIMAL(10,2) default 0,
   stock_quantity INT default 0,
   PRIMARY KEY (id)
 );
@@ -20,6 +20,7 @@ VALUES  ('Shampoo', 'Cosmetics', 5.75, 500),
 		    ('Zucchini', 'Produce', 0.85, 800),
 		    ('Avacado', 'Produce', 1.20, 1000),
 		    ('Chicken Breast', 'Meat', 4.45, 267),
+			('Fresh Haddock', 'Seafood', 14.45, 2),
 		    ('Cream Cheese', 'Dairy', 1.75, 476),
 		    ('Milk', 'Dairy', 2.50, 423),
 		    ('Chocolate Cake', 'Bakery', 12.75, 50)
